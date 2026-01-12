@@ -1,0 +1,13 @@
+name: CI/CD Pipeline
+
+# Trigger à chaque push sur n'importe quelle branche
+on:
+  push:
+
+jobs:
+  hello-job:
+    runs-on: ubuntu-latest   # Le type de machine virtuelle
+
+    steps:
+      - name: Say Hello
+        run: echo "Hello CI/CD"
